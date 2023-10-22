@@ -1,17 +1,24 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'instasany-brand': '#2A4B46',
+        'instasany-brand-default': '#CCEC60',
+        'instasany-brand-light': '#5D8A83',
+        'instasany-brand-dark': '#1D3531',
+        'instasany-neutral-100': '#0A1D2E',
+        'instasany-neutral-200': '#29394A',
+        'instasany-neutral-300': '#475567',
+        'instasany-neutral-400': '#7C8999',
+        'instasany-neutral-500': '#A6AEB8',
+        'instasany-neutral-600': '#CDD1D6',
+      },
+
+      maxWidth: {
+        grid: '77.5rem', // 1240px
       },
     },
   },

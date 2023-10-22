@@ -1,9 +1,10 @@
+import { Header } from '@/components/header'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
-import { Epilogue } from 'next/font/google'
+import { Barlow } from 'next/font/google'
 import { ReactNode, FC } from 'react'
 
-const epilogue = Epilogue({
+const barlow = Barlow({
   subsets: ['latin'],
   weight: ['500', '600', '700'],
 })
@@ -20,7 +21,10 @@ type RootLayoutProps = {
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={epilogue.className}>{children}</body>
+      <body className={barlow.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
