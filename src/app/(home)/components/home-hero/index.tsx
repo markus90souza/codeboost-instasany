@@ -5,7 +5,7 @@ import { fileIcon, hand2Icon, handIcon, mockup } from '@/assets'
 
 export const HomeHero: FC = () => {
   return (
-    <section className="bg-hero bgnor relative h-hero w-full overflow-hidden border-t border-t-instasany-brand-light bg-instasany-brand-dark pt-16">
+    <section className="relative h-hero w-full overflow-hidden border-t border-t-instasany-brand-light bg-instasany-brand-dark bg-hero pt-16">
       <Container className="flex flex-col items-center ">
         <div className="w-full max-w-hero text-center">
           <h3 className="mb-4 text-xl font-medium text-instasany-brand-light">
