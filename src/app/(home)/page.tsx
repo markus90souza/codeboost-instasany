@@ -1,9 +1,14 @@
+import { FC } from 'react'
+import { HomeFeatures } from './components/home-features'
 import { HomeHero } from './components/home-hero'
 
-export default function HomePage() {
+const HomePage: FC = () => {
   return (
     <>
       <HomeHero />
+      <HomeFeatures />
     </>
   )
 }
+
+export default HomePage
