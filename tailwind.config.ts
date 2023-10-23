@@ -19,6 +19,17 @@ const config: Config = {
 
       maxWidth: {
         grid: '77.5rem', // 1240px
+        hero: '66rem', // 1156px
+        'grid-icons': '53.4375rem', // 855px
+        'grid-mockups': '59.8125rem', // 957px
+      },
+
+      height: {
+        hero: '54.625rem',
+      },
+
+      backgroundImage: {
+        hero: 'url(/bg-hero.svg)',
       },
     },
   },

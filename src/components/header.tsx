@@ -47,7 +47,7 @@ export const Header: FC = () => {
                   'px-3 py-1 text-white/40 hover:text-white hover:transition-all',
                   `${
                     index === 0
-                      ? 'bg-instasany-brand-light rounded-full text-white'
+                      ? ' bg-instasany-brand-light rounded-full text-white'
                       : ''
                   } `,
                 )}
