@@ -35,7 +35,7 @@ const menu = [
 
 export const Header: FC = () => {
   return (
-    <header className="bg-instasany-brand-dark relative flex h-24 w-full items-center">
+    <header className="relative flex h-24 w-full items-center bg-instasany-brand-dark">
       <Container className="flex items-center justify-between">
         <Image alt="" src={logoIcon} />
 
@@ -47,7 +47,7 @@ export const Header: FC = () => {
                   'px-3 py-1 text-white/40 hover:text-white hover:transition-all',
                   `${
                     index === 0
-                      ? ' bg-instasany-brand-light rounded-full text-white'
+                      ? ' rounded-full bg-instasany-brand-light text-white'
                       : ''
                   } `,
                 )}

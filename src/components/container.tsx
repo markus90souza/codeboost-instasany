@@ -8,7 +8,7 @@ type ContainerProps = HTMLAttributes<HTMLDivElement> & {
 
 export const Container: FC<ContainerProps> = ({ children, className }) => {
   return (
-    <div className={cn('max-w-grid mx-auto w-full px-3', className)}>
+    <div className={cn('mx-auto w-full max-w-grid px-3', className)}>
       {children}
     </div>
   )
