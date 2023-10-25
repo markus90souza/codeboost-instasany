@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useEffect, useLayoutEffect, useRef } from 'react'
+import { FC, useLayoutEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Container } from '@/components/container'
 import { fileIcon, hand2Icon, handIcon, mockup } from '@/assets'
@@ -41,7 +41,7 @@ export const HomeHero: FC = () => {
   }, [])
 
   return (
-    <section className="relative h-hero w-full overflow-hidden border-t border-t-instasany-brand-light bg-instasany-brand-dark bg-hero pt-16">
+    <section className="relative h-hero w-full overflow-hidden border-t border-t-instasany-brand-light bg-instasany-brand-dark bg-hero bg-center bg-no-repeat pt-16">
       <Container className="flex flex-col items-center ">
         <div
           ref={heroTextRef}
@@ -68,12 +68,12 @@ export const HomeHero: FC = () => {
           </div>
         </div>
 
-        <div className="relative mt-4 h-28 w-full max-w-grid-icons">
+        <div className="relative mt-4 hidden h-28 w-full md:max-w-grid-icons">
           <Image src={handIcon} alt="" className="absolute bottom-0 left-0" />
           <Image src={hand2Icon} alt="" className="absolute right-0 top-0" />
         </div>
 
-        <div className="absolute -bottom-48 flex w-full max-w-grid-mockups justify-between">
+        <div className="absolute -bottom-48 hidden w-full max-w-grid-mockups justify-between md:flex">
           <Image
             ref={mockupleftRef}
             src={mockup}

@@ -36,11 +36,11 @@ const menu = [
 export const Header: FC = () => {
   return (
     <header className="relative flex h-24 w-full items-center bg-instasany-brand-dark">
-      <Container className="flex items-center justify-between">
+      <Container className="flex items-center justify-between px-6 sm:px-0">
         <Image alt="" src={logoIcon} />
 
         <div className="flex items-center gap-20">
-          <nav className="flex gap-2">
+          <nav className="hidden gap-2 md:flex">
             {menu.map((link, index) => (
               <Link
                 className={cn(

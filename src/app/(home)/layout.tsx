@@ -18,12 +18,15 @@ type RootLayoutProps = {
   children: ReactNode
 }
 
-const RootLayout: FC<RootLayoutProps> = ({ children }) => {
+const InstasanyLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={barlow.className}>{children}</body>
+      <body className={barlow.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
 
-export default RootLayout
+export default InstasanyLayout
