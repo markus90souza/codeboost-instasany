@@ -11,7 +11,7 @@ export const HomeFeatures: FC = () => {
         alt=""
       />
 
-      <h2 className="mb-56 text-center text-7xl font-medium text-black">
+      <h2 className="mb-56 text-center text-5xl font-medium text-black md:text-7xl">
         Faça <span className="text-instasany-brand-light">você</span> mesmo de
         casa
       </h2>

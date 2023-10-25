@@ -7,6 +7,7 @@ import fileIcon from './icon-file.svg'
 
 import mockup from './mockup.svg'
 import phone from './mockup-main.png'
+
 import card01 from './image-01.png'
 import card02 from './image-02.png'
 import card03 from './image-03.png'

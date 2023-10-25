@@ -1,17 +1,56 @@
-import { FC } from 'react'
+'use client'
+
+import { FC, useEffect, useLayoutEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Container } from '@/components/container'
 import { fileIcon, hand2Icon, handIcon, mockup } from '@/assets'
+import gsap from 'gsap'
 
 export const HomeHero: FC = () => {
+  const heroTextRef = useRef(null)
+  const mockupleftRef = useRef(null)
+  const mockupRightRef = useRef(null)
+
+  useLayoutEffect(() => {
+    gsap.fromTo(
+      heroTextRef.current,
+      {
+        opacity: 0,
+        y: 20,
+      },
+      { opacity: 1, y: 0, duration: 1, ease: 'power4.out' },
+    )
+
+    gsap.fromTo(
+      mockupleftRef.current,
+      { rotate: 0 },
+      {
+        rotate: -12,
+        duration: 1,
+      },
+    )
+
+    gsap.fromTo(
+      mockupRightRef.current,
+      { rotate: 0 },
+      {
+        rotate: 12,
+        duration: 1,
+      },
+    )
+  }, [])
+
   return (
     <section className="relative h-hero w-full overflow-hidden border-t border-t-instasany-brand-light bg-instasany-brand-dark bg-hero pt-16">
       <Container className="flex flex-col items-center ">
-        <div className="w-full max-w-hero text-center">
+        <div
+          ref={heroTextRef}
+          className="w-full max-w-hero text-center opacity-0"
+        >
           <h3 className="mb-4 text-xl font-medium text-instasany-brand-light">
             Novo curso focado no Instragram
           </h3>
-          <h1 className="mb-8 text-7xl/normal font-semibold text-white">
+          <h1 className="mb-8 text-5xl/normal font-semibold text-white md:text-7xl/normal">
             Destrave as suas habilidades
           </h1>
 
@@ -36,14 +75,16 @@ export const HomeHero: FC = () => {
 
         <div className="absolute -bottom-48 flex w-full max-w-grid-mockups justify-between">
           <Image
+            ref={mockupleftRef}
             src={mockup}
             alt=""
-            className="relative left-[3.3rem] top-[1.1rem] -rotate-12"
+            className="relative left-[3.3rem] top-[1.1rem]"
           />
           <Image
+            ref={mockupRightRef}
             src={mockup}
             alt=""
-            className="relative right-[3.3rem] top-[1.1rem] rotate-12"
+            className="relative right-[3.3rem] top-[1.1rem]"
           />
         </div>
       </Container>
