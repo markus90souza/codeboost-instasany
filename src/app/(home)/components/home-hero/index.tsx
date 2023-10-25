@@ -3,7 +3,7 @@
 import { FC, useLayoutEffect, useRef } from 'react'
 import Image from 'next/image'
 import { Container } from '@/components/container'
-import { fileIcon, hand2Icon, handIcon, mockup } from '@/assets'
+import { fileIcon, hand2Icon, handIcon, mockup } from '@/assets/instasany'
 import gsap from 'gsap'
 
 export const HomeHero: FC = () => {

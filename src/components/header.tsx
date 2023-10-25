@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
-import { userIcon, logoIcon, searchIcon } from '@/assets'
+import { userIcon, logoIcon, searchIcon } from '@/assets/instasany'
 import { Container } from '@/components/container'
 import { cn } from '@/lib/utils'
 

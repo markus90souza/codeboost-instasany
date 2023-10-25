@@ -29,7 +29,7 @@ const config: Config = {
       },
 
       backgroundImage: {
-        hero: 'url(/bg-hero.svg)',
+        hero: 'url(/images/instasany/bg-hero.svg)',
       },
     },
   },

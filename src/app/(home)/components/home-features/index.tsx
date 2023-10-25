@@ -1,7 +1,15 @@
 'use client'
 import { FC, useEffect, useRef } from 'react'
 import Image from 'next/image'
-import { card01, card02, card03, card04, card05, card06, phone } from '@/assets'
+import {
+  card01,
+  card02,
+  card03,
+  card04,
+  card05,
+  card06,
+  phone,
+} from '@/assets/instasany'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
